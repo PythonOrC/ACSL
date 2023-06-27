@@ -1,9 +1,11 @@
 import java.util.Stack;
 
-public class mid2pre{
+public class in2prepost{
     public static void main(String[] args) {
-        // System.out.println(zhong2Qian("(((3*4)+(8/2))^(7-5))"));
-        System.out.println(zhong2hou("(1+(1+(1+x)^(1/2))^(1/2))^(1/2)"));
+        String in_exp="(((3*4)+(8/2))^(7-5))";
+        System.out.println("Infix: "+in_exp);
+        System.out.println("Prefix: "+zhong2Qian(in_exp));
+        System.out.println("Postfix: "+zhong2hou(in_exp));
     }
 
 
